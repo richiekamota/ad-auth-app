@@ -77,11 +77,11 @@ return [
                 'model' => App\Models\User::class,
                 'sync_passwords' => false,
                 'sync_attributes' => [
-                  'name' => 'cn',
-                  'email' => 'mail',
-                  'user_id' => 'uid',
-                  'organisation_unit' => 'ou',
-                  'organisation' => 'o'
+                 'name' => 'cn',        // LDAP attribute for name
+                 'email' => 'mail',     // LDAP attribute for email
+                 'guid' => 'uid',       // LDAP attribute for GUID
+                 'org' => 'o',          // LDAP attribute for organization
+                 'org_unit' => 'ou',    // LDAP attribute for organizational unit
                 ],
             ],
         ],
