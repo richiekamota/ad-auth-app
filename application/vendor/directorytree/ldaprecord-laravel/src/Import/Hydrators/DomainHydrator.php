@@ -13,6 +13,6 @@ class DomainHydrator extends Hydrator
      */
     public function hydrate(LdapModel $object, EloquentModel $eloquent): void
     {
-        $eloquent->setLdapDomain($object->getConnectionName() ?? Config::get('ldap.default'));
+        //$eloquent->setLdapDomain($object->getConnectionName() ?? Config::get('ldap.default'));
     }
 }

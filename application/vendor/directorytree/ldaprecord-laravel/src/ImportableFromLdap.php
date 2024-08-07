@@ -7,26 +7,26 @@ trait ImportableFromLdap
     /**
      * Get the database column name of the domain.
      */
-    public function getLdapDomainColumn(): string
-    {
-        return 'domain';
-    }
+    // public function getLdapDomainColumn(): string
+    // {
+    //     return 'domain';
+    // }
 
     /**
      * Get the models LDAP domain.
      */
-    public function getLdapDomain(): ?string
-    {
-        return $this->{$this->getLdapDomainColumn()};
-    }
+    // public function getLdapDomain(): ?string
+    // {
+    //     return $this->{$this->getLdapDomainColumn()};
+    // }
 
     /**
      * Set the models LDAP domain.
      */
-    public function setLdapDomain(?string $domain): void
-    {
-        $this->{$this->getLdapDomainColumn()} = $domain;
-    }
+    // public function setLdapDomain(?string $domain): void
+    // {
+    //     $this->{$this->getLdapDomainColumn()} = $domain;
+    // }
 
     /**
      * Get the models LDAP GUID database column name.
