@@ -69,6 +69,22 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+        'users' => [
+          'driver' => 'ldap',
+          'model' => LdapRecord\Models\OpenLDAP\User::class,
+          'rules' => [],
+          'database' => [
+                'model' => App\Models\User::class,
+                'sync_passwords' => false,
+                'sync_attributes' => [
+                  'name' => 'cn',
+                  'email' => 'mail',
+                  'user_id' => 'uid',
+                  'organisation_unit' => 'ou',
+                  'organisation' => 'o'
+                ],
+            ],
+        ],
     ],
 
     /*
