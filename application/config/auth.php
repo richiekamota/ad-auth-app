@@ -66,7 +66,7 @@ return [
           'rules' => [],
           'database' => [
                 'model' => App\Models\User::class,
-                'sync_passwords' => false,
+                'sync_passwords' => true,
                 'sync_attributes' => [
                  'name' => 'cn',        // LDAP attribute for name
                  'email' => 'mail',     // LDAP attribute for email
