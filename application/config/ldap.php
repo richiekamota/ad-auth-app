@@ -29,7 +29,7 @@ return [
     'connections' => [
 
         'default' => [
-            'hosts' => [env('LDAP_HOST', 'localhost')],
+            'hosts' => [env('LDAP_HOST', '127.0.0.1')],
             'username' => env('LDAP_USERNAME', 'cn=LDIF,dc=localhost,dc=com'),
             'password' => env('LDAP_PASSWORD', 'kamota'),
             'port' => env('LDAP_PORT', 9011),
